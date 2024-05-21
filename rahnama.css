@@ -1,0 +1,287 @@
+ /* general */
+ @font-face {
+    font-family: myfirstfont;
+    src: url('../font/woff2/IRANSansWeb\(FaNum\).woff2') format('woff2'),
+       url('../font/woff/IRANSansWeb\(FaNum\).woff') format('woff'),
+ }
+
+ body {
+    direction: rtl;
+    margin: 0;
+    height: 100%;
+    font-family: myfirstfont;
+
+ }
+
+ * {
+    box-sizing: border-box;
+ }
+
+ html {
+    height: 100%;
+ }
+
+ a {
+    text-decoration: none;
+    /* color: rgb(244, 244, 244); */
+ }
+
+ /* start header */
+ .nav-link:hover{
+  background-color: rgb(37, 150, 190)
+  ;
+  transition: 0.25s;
+  
+
+ }
+ .phone-number{
+   animation: myAnim 5s linear 0s 1 normal none;
+   animation-iteration-count: infinite;
+ }
+ @keyframes myAnim {
+   0%,
+   100% {
+     transform: translateY(0);
+   }
+ 
+   10%,
+   30%,
+   50%,
+   70% {
+     transform: translateY(-8px);
+   }
+ 
+   20%,
+   40%,
+   60% {
+     transform: translateY(8px);
+   }
+ 
+   80% {
+     transform: translateY(6.4px);
+   }
+ 
+   90% {
+     transform: translateY(-6.4px);
+   }
+ }
+
+ /* end header */
+
+ /* start hero */
+ .hero .container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ }
+ .hero .container .title h1{
+   color: #153448;
+ }
+ .hero .container .title p{
+   color: #4e4d4d;
+   text-align: justify;
+   line-height: 30px;
+   padding: 20px;
+   border-right:1px dashed #2c1691;
+   border-bottom:1px dashed #2c1691;
+ }
+ .hero .container .img img{
+   width: 100%;
+ }
+ /* end hero */
+
+ /* start part1 */
+ .part1 .container h2{
+   color: #153448;
+ }
+ .part1 .container p{
+   color: #4e4d4d;
+   line-height: 30px;
+ }
+.part1 .container ul li{
+  font-size: 18px;
+  line-height: 30px;
+  color: #4e4d4d;
+  margin-top: 20px;
+  transition: 0.25s;
+}
+
+.part1 .container ul li:hover{
+  transform: translateX(-13px);
+  transition: 0.25s;
+  color: #153448;
+}
+ /* end part1 */
+
+ /* start part2 */
+ .part2{
+  margin-top: 30px;
+ }
+ .part2 .container h2{
+  text-align: center;
+  color: #153448; 
+
+ }
+ .part2 .container .img{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ }
+
+ .part2 .container .img img{
+  width: 30%;
+  height: 300px;
+  margin: 7px;
+  border-radius: 5px;
+  opacity: 0.7;
+  transition: 0.25s;
+ }
+ .part2 .container .img img:hover{
+  opacity: 1;
+  transition: 0.25s;
+  box-shadow: -1px 2px 5px 0px rgba(189, 180, 180, 0.75);
+  -webkit-box-shadow: -1px 2px 5px 0px rgba(189, 180, 180, 0.75);
+  -moz-box-shadow: -1px 2px 5px 0px  rgba(189, 180, 180, 0.75);
+ }
+ /* end part2 */
+ /* start part3 */
+ .part3{
+  margin-top: 60px;
+ }
+ .part3 .container .top h2{
+  color: #153448; 
+ }
+ .part3 .container .top p{
+  color: #4e4d4d;
+  line-height: 40px;
+  padding: 20px;
+  border-right: 1px dashed #2c1691;
+  border-bottom: 1px dashed #2c1691 ;
+  border-radius: 5px;
+ }
+ .part3 .container .bottom h2{
+  color: #153448; 
+  text-align: center;
+  margin-top: 60px;
+
+ }
+ .part3 .container .bottom p{
+  color: #4e4d4d;
+  line-height: 40px;
+ }
+ .part3 .container .cards{
+  display: flex;
+  justify-content: space-around;
+ }
+ .part3 .container .card{
+  width: 30%;
+  background-color: #eeeeeed0;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  transition: 0.25s;
+ }
+ .part3 .container .card:hover{
+  background-color: #153448;
+  color: white;
+  transition: 0.25s;
+ }
+
+ /* end part3 */
+ /* start part4 */
+ .part4{
+  margin-top: 100px;
+ }
+ .part4 .container .section{
+  background-color: #eeeeeed0;
+  margin-top: 40px;
+  padding: 20px;
+  border-radius: 5px;
+  transition: 0.25s;
+ }
+ .part4 .container .section:hover{
+  background-color: #153448;
+  color: white;
+  transform: translateY(-2px);
+  transition: 0.5s;
+  box-shadow: 7px 7px 5px -2px rgba(145,127,127,0.53);
+  -webkit-box-shadow: 7px 7px 5px -2px rgba(145,127,127,0.53);
+  -moz-box-shadow: 7px 7px 5px -2px rgba(145,127,127,0.53);
+ }
+ .part4 .container .section p{
+  line-height: 30px;
+  text-align: justify;
+ }
+
+ 
+
+
+ /* end part4 */
+ @media only screen and (max-width: 768px){
+  .hero .container .title h1{
+    font-size: 18px;
+    position: relative;
+    right: 20px;
+  }
+  .part1 .container h2{
+    font-size: 15px;
+  }
+  .part1 .container p{
+    font-size: 11px;
+  }
+  .part2 .container h2{
+    font-size: 15px;
+  }
+  .part2 .container .img img{
+    width: 200px;
+    opacity: 1;
+    height: 200px;
+  }
+
+
+ }
+
+ @media only screen and (max-width: 400px){
+  .hero .container .title p {
+    font-size: 13px;
+    line-height: 24px;
+  }
+  .part1 .container p  {
+    font-size: 13px;
+    line-height: 24px;
+  }
+  .part1 .container ul li{
+    font-size: 13px;
+    margin-top: 0;
+    margin-top: 5px;
+  }
+  .part2 .container .img{
+    display: flex;
+    flex-direction: column;
+
+  }
+  .part2 .container .img img{
+    width: 100%;
+    opacity: 1;
+    height: 200px;
+  }
+
+  .part3 .container .top p {
+    line-height: 27px;
+    font-size: 13px;
+  }
+
+  .part3 .container .bottom p {
+    line-height: 27px;
+    font-size: 13px;
+  }
+  .part3 .container .cards{
+    display: flex;
+    flex-direction: column;
+  }
+  .part3 .container .card{
+    width: 100%;
+  }
+
+ }
